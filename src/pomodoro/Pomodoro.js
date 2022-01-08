@@ -64,6 +64,7 @@ function Pomodoro() {
   const handleStopClick = () => {
     setIsTimerRunning(false);
     setSession(null);
+    setAria(0)
   };
 
   const decrementFocusByFive = () => {
