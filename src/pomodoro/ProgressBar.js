@@ -6,7 +6,7 @@ return (
 <div>
         {/* TODO: This area should show only when there is an active focus or break - i.e. the session is running or is paused */}
        
-        {session &&      
+        {session   &&
         (<div className="row mb-2">
           <div className="col">
             {/* TODO: Update message below to include current session (Focusing or On Break) total duration */}
@@ -19,8 +19,8 @@ return (
             </p>
           </div>
         </div>)}
-         
-        <div className="row mb-2">
+         {session &&
+        (<div className="row mb-2">
           <div className="col">
             <div className="progress" style={{ height: "20px" }}>
               <div
@@ -34,7 +34,7 @@ return (
               />
             </div>
           </div>
-        </div>
+        </div>)}
       </div>
 
       )
